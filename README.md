@@ -22,6 +22,9 @@ The first and only argument need to be the same as subtree spec given to 'kubect
 To see all api resources run:
 kubectl api-resources
 
+NOTE: this bash script is not optimized, it calls 'kubectl explain ' for each element in the subtree
+to get the description.
+
 Once you have the output (tabulator separated text with descriptions), you can use
 ```
 text-to-freemind.py
