@@ -42,7 +42,8 @@ Do many subtrees in a loop:
 for item in services roles secrets resourcequotas namespaces networkpolicies replicasets replicationcontrollers ingresses jobs leases events endpoints deamonsets cronjobs bindings;
   do 
    echo "doing $item"  
-   kubectl explain $item --recursive | ./kube-explain-reformat.sh $item > ${item}.txt ; /text-to-freemind.py ${item}.txt > ${item}.mm ; done
+   kubectl explain $item --recursive | ./kube-explain-reformat.sh $item > ${item}.txt ; /text-to-freemind.py ${item}.txt > ${item}.mm ;
+   done
 
 ```
 
