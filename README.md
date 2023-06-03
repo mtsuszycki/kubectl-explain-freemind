@@ -12,24 +12,26 @@ The script produces the output in tab format
 so it can be converted to a FreeMind xml, that can be imported to mindmup.com
 
 How to use:
-
+```
 kubectl explain pod --recursive | ./kube-explain-reformat.sh pod > pod.txt
 kubectl explain pod.spec.containers --recursive | ./kube-explain-reformat.sh pod.spec.containers
 kubectl explain csinodes --recursive | ./kube-explain-reformat.sh csinodes
-
+```
 etc.
 The first and only argument need to be the same as subtree spec given to 'kubectl explain'.
 To see all api resources run:
 kubectl api-resources
 
 Once you have the output (tabulator separated text with descriptions), you can use
+```
 text-to-freemind.py
+```
 tool to convert it to a xml format that can be imported to Mindmup or Freemap.
 
 So, from the example above, assuming that you have created pod.txt file, convert it to xml:
-
+```
 text-to-freemind.py pod.txt > pod.mm
-
+```
 .mm is a MindMup extension.
 Then go to a MindMup web interface, File -> Import -> upload a file . Drag n drop pod.mm 
 and after a while you should see big Mind Map for a kubectl pod API. Use 'F' key to collapse subtrees.
