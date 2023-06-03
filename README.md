@@ -38,10 +38,13 @@ text-to-freemind.py pod.txt > pod.mm
 .mm is a MindMup extension.
 
 Do many subtrees in a loop:
-'''
-for item in services roles secrets resourcequotas namespaces networkpolicies replicasets replicationcontrollers ingresses jobs leases events endpoints deamonsets cronjobs bindings; do echo "doing $item";  kubectl explain $item --recursive | ./kube-explain-reformat.sh $item > ${item}.txt ; /text-to-freemind.py ${item}.txt > ${item}.mm ; done
+```
+for item in services roles secrets resourcequotas namespaces networkpolicies replicasets replicationcontrollers ingresses jobs leases events endpoints deamonsets cronjobs bindings;
+  do 
+   echo "doing $item"  
+   kubectl explain $item --recursive | ./kube-explain-reformat.sh $item > ${item}.txt ; /text-to-freemind.py ${item}.txt > ${item}.mm ; done
 
-'''
+```
 
 Then go to a MindMup web interface, File -> Import -> upload a file . Drag n drop pod.mm 
 and after a while you should see big Mind Map for a kubectl pod API. Use 'F' key to collapse subtrees.
