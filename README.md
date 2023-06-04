@@ -22,7 +22,7 @@ One level of object 'namespaces'  with Top-Down theme showing what 'options' are
 
 ![20230604-144752](https://github.com/mtsuszycki/kubectl-explain-freemind/assets/3226505/41059ad9-f5bd-4646-a97a-d728cc023116)
 
-'namespaces' subtree, unfolded:
+'namespaces.metadata' subtree, unfolded:
 ![20230604-144840](https://github.com/mtsuszycki/kubectl-explain-freemind/assets/3226505/ee94ab51-d609-4c44-9f69-feace91dfb3c)
 
 
