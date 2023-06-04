@@ -4,6 +4,10 @@ Create a mind map from 'kubectl explain'
 so the whole kubectl API can be viewed (in mindmup.com or freemind) as a big tree, a mind map, with descriptions, 
 to visualize kubectl api objects and their relations.
 
+If you are lazy or don't need the script, I attach kube-api.mm, which can be imported directly to MindMup or
+FreeMind. It's the whole kubectl api tree as of 04th June 2023.
+It's pretty big, so be patient while importing to MindMup. It took a couple of minutes to import it to my MindMup.
+
 Screenshot from MindMup showing first level of the tree, the rest is collapsed
 ![20230604-144733](https://github.com/mtsuszycki/kubectl-explain-freemind/assets/3226505/2f1b92f8-42b9-4acc-b22e-57629697c1d5)
 
