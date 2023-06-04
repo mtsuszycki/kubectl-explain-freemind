@@ -4,13 +4,16 @@ Create a mind map from 'kubectl explain'
 so the whole kubectl API can be viewed (in mindmup.com or freemind) as a big tree, a mind map, with descriptions, 
 to visualize kubectl api objects and their relations.
 
-Screenshot from MindMup, showing subtree for a 'pod' API, with descriptions (other subtrees collapsed)
-(first level items like 'EXPLORE' etc. are not part of api-resources, just added for learning and grouping)
+Screenshot from MindMup showing first level of the tree, the rest is collapsed
+![20230604-144733](https://github.com/mtsuszycki/kubectl-explain-freemind/assets/3226505/2f1b92f8-42b9-4acc-b22e-57629697c1d5)
 
-![20230604-115221](https://github.com/mtsuszycki/kubectl-explain-freemind/assets/3226505/69e87199-8d86-4125-a8ab-6f93e1d66269)
 
-Subtree showing api description for Secret -> Metadata, with Top-Down theme.
-![20230604-115617](https://github.com/mtsuszycki/kubectl-explain-freemind/assets/3226505/5cb66149-11dc-43bf-b303-1eb923dddbb5)
+One level of 'namespaces'  with Top-Down theme.
+![20230604-144752](https://github.com/mtsuszycki/kubectl-explain-freemind/assets/3226505/41059ad9-f5bd-4646-a97a-d728cc023116)
+
+'namespaces' subtree, unfolded:
+![20230604-144840](https://github.com/mtsuszycki/kubectl-explain-freemind/assets/3226505/ee94ab51-d609-4c44-9f69-feace91dfb3c)
+
 
 MindMup automatically supports http links in descriptions, which is handy.
 Also it has themes (e.g 'top-down') than can show the tree in different ways. Also it support storyboards. 
