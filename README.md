@@ -4,10 +4,14 @@ Create a mind map from 'kubectl explain'
 so the whole kubectl API can be viewed (in mindmup.com or freemind) as a big tree, a mind map, with descriptions
 
 Screenshot from MindMup, showing subtree for a 'pod' API, with descriptions (other subtrees collapsed)
+(first level items like 'EXPLORE' etc. are not part of api-resources, just added for learning and grouping)
 
 ![20230604-115221](https://github.com/mtsuszycki/kubectl-explain-freemind/assets/3226505/69e87199-8d86-4125-a8ab-6f93e1d66269)
 
-In other words, this kube-explain-reformat.sh bash script adds descriptions to 
+Subtree showing api description for Secret -> Metadata
+![20230604-115617](https://github.com/mtsuszycki/kubectl-explain-freemind/assets/3226505/5cb66149-11dc-43bf-b303-1eb923dddbb5)
+
+The kube-explain-reformat.sh bash script adds descriptions to 
 kubectl explain 'something' --recursive
 
 --recursive gives the view of the whole subtree but does not include description
