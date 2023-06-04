@@ -48,8 +48,9 @@ for item in services roles secrets resourcequotas namespaces networkpolicies rep
 ```
 Do all api-resources subtrees in a loop:
 ```
- kubectl api-resources | awk '{print $1}' | while read item ; 
-  do echo "checking $item" 
+# tail is to skip the first header line
+ kubectl api-resources | tail -n +2 | awk '{print $1}' | while read item ; do 
+  echo "checking $item" 
   [ -r ${item}.mm ] && { echo "already exists"; continue; } 
   echo "doing $item"  
   kubectl explain $item --recursive | ./kube-explain-reformat.sh $item > ${item}.txt ; ./text-to-freemind.py ${item}.txt > ${item}.mm ; done
