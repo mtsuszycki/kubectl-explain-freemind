@@ -4,8 +4,9 @@ Create a mind map from 'kubectl explain'
 so the whole kubectl API (e.g YAML structure) can be viewed (in mindmup.com or freemind) as a big tree, a mind map, with descriptions, 
 to visualize kubectl api objects and their relations.
 
-Great thing about MindMup is that it can collapse branches or subtrees, so having a full Kube API tree with
-descriptions is helpful for studying, allows to discover many interesting 'branches'.
+Great thing about MindMup (one of many) is that it can collapse branches or subtrees, so having a full Kube API tree with
+descriptions is helpful for studying, allows to discover many interesting 'branches' and dive down to look
+for more details that can be specified for a given API object.
 
 If you are lazy or don't need the script, I attach kube-api.mm, which can be imported directly to MindMup or
 FreeMind. It's the whole kubectl api tree as of 04th June 2023.
