@@ -12,11 +12,14 @@ If you are lazy or don't need the script, I attach kube-api.mm, which can be imp
 FreeMind. It's the whole kubectl api tree as of 04th June 2023.
 It's pretty big, so be patient while importing to MindMup. It took a couple of minutes to import it to my MindMup.
 
-Screenshot from MindMup showing first level of the tree, the rest is collapsed
+Screenshot from MindMup showing first level of the tree, the rest is collapsed.
+It shows all objects that API supports:
+
 ![20230604-144733](https://github.com/mtsuszycki/kubectl-explain-freemind/assets/3226505/2f1b92f8-42b9-4acc-b22e-57629697c1d5)
 
 
-One level of 'namespaces'  with Top-Down theme.
+One level of object 'namespaces'  with Top-Down theme showing what 'options' are valid for 'namespaces':
+
 ![20230604-144752](https://github.com/mtsuszycki/kubectl-explain-freemind/assets/3226505/41059ad9-f5bd-4646-a97a-d728cc023116)
 
 'namespaces' subtree, unfolded:
