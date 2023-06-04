@@ -46,6 +46,15 @@ for item in services roles secrets resourcequotas namespaces networkpolicies rep
    done
 
 ```
+Do all api-resources subtrees in a loop:
+```
+ kubectl api-resources | awk '{print $1}' | while read item ; 
+  do echo "checking $item" 
+  [ -r ${item}.mm ] && { echo "already exists"; continue; } 
+  echo "doing $item"  
+  kubectl explain $item --recursive | ./kube-explain-reformat.sh $item > ${item}.txt ; ./text-to-freemind.py ${item}.txt > ${item}.mm ; done
+ 
+ ```
 
 Then go to a MindMup web interface, File -> Import -> upload a file . Drag n drop pod.mm 
 and after a while you should see big Mind Map for a kubectl pod API. Use 'F' key to collapse subtrees.
