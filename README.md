@@ -1,7 +1,7 @@
 # kubectl-explain-freemind
 
 Create a mind map from 'kubectl explain'
-so the whole kubectl API can be viewed (in mindmup.com or freemind) as a big tree, a mind map, with descriptions, 
+so the whole kubectl API (e.g YAML structure) can be viewed (in mindmup.com or freemind) as a big tree, a mind map, with descriptions, 
 to visualize kubectl api objects and their relations.
 
 Great thing about MindMup is that it can collapse branches or subtrees, so having a full Kube API tree with
